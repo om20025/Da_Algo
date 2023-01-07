@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RedBlack_tree"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start"
+    android:id="@+id/redblack_tree"
+    android:background="#FFFFF0">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/redblack_program_code"
+        android:layout_width="match_parent"
+        android:backgroundTint="#ffa500"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:title="Red Black Tree"
+        app:titleMarginStart="40dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="6dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <TextView
+        android:id="@+id/redblack_textview1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:textAlignment="gravity"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@+id/redblack_program_code"
+        tools:ignore="MissingConstraints,UnknownIdInLayout"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+        android:id="@+id/redblack_textview2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:layout_marginRight="10dp"
+        android:textAlignment="gravity"
+        android:textColor="@color/black"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/redblack_textview1"
+        tools:ignore="MissingConstraints,UnknownIdInLayout"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+        android:id="@+id/redblack_textview3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textAlignment="gravity"
+        android:textSize="24dp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@+id/redblack_textview2"
+        tools:ignore="MissingConstraints,UnknownIdInLayout"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+        android:id="@+id/redblack_textview4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textAlignment="gravity"
+        android:textSize="16dp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@+id/redblack_textview3"
+        tools:ignore="MissingConstraints,UnknownIdInLayout"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+        android:id="@+id/redblack_textview5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textAlignment="gravity"
+        android:textSize="24dp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@+id/redblack_textview4"
+        tools:ignore="MissingConstraints,UnknownIdInLayout"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+        android:id="@+id/redblack_textview6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textAlignment="gravity"
+        android:textSize="16dp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@+id/redblack_textview5"
+        tools:ignore="MissingConstraints,UnknownIdInLayout"
+        tools:layout_editor_absoluteX="0dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.drawerlayout.widget.DrawerLayout>

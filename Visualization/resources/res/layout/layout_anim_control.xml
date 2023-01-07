@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="horizontal" android:id="@+id/animControl" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/animSkipBack" android:visibility="gone" android:layout_width="0dp" android:layout_height="wrap_content" android:src="@drawable/skip_back" android:layout_weight="1" android:onClick="onAnimControlClick"/>
+    <ImageView android:id="@+id/animStepBack" android:visibility="gone" android:layout_width="0dp" android:layout_height="wrap_content" android:src="@drawable/step_back" android:layout_weight="1" android:onClick="onAnimControlClick"/>
+    <ImageView android:id="@+id/animPause" android:layout_width="0dp" android:layout_height="wrap_content" android:src="@drawable/pause" android:layout_weight="1" android:onClick="onAnimControlClick"/>
+    <ImageView android:id="@+id/animStepForward" android:visibility="gone" android:layout_width="0dp" android:layout_height="wrap_content" android:src="@drawable/step_next" android:layout_weight="1" android:onClick="onAnimControlClick"/>
+    <ImageView android:id="@+id/animSkipForward" android:visibility="gone" android:layout_width="0dp" android:layout_height="wrap_content" android:src="@drawable/skip_next" android:layout_weight="1" android:onClick="onAnimControlClick"/>
+</LinearLayout>

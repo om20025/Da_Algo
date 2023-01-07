@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Feedback"
+    android:id="@+id/FeedBack"
+    android:fitsSystemWindows="true"
+    android:background="#FFFFF0"
+    tools:openDrawer="start">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/feedback_Toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/colorPrimary"
+                android:minHeight="?attr/actionBarSize"
+                android:theme="?attr/actionBarTheme"
+                app:title="Feedback"
+                app:titleMarginStart="40dp"
+                android:backgroundTint="#ffa500"
+                tools:ignore="MissingConstraints" />
+
+            <EditText
+                android:id="@+id/addfeedback"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:hint="Feed Back"
+                app:layout_constraintTop_toBottomOf="@+id/feedback_Toolbar"
+                tools:ignore="MissingConstraints" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Submit"
+                android:id="@+id/feedback_submit"
+                android:textAlignment="center"
+                android:layout_marginTop="100dp"
+                android:backgroundTint="#a020f0"
+                app:layout_constraintTop_toBottomOf="@+id/addfeedback"
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/feedback_Navigation"
+        app:headerLayout="@layout/headerfile"
+        app:menu="@menu/sidemenu"
+        android:layout_gravity="start">
+
+    </com.google.android.material.navigation.NavigationView>
+
+</androidx.drawerlayout.widget.DrawerLayout>

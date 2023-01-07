@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/keyBoard" android:background="@color/brown" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:paddingTop="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/kbdBtn1" android:padding="2dp" android:layout_width="0dp" android:layout_height="wrap_content" android:src="@drawable/key_1" android:adjustViewBounds="true" android:layout_weight="1" android:onClick="onKeyboardClick"/>
+        <ImageView android:id="@+id/kbdBtn2" android:padding="2dp" android:layout_width="0dp" android:layout_height="wrap_content" android:src="@drawable/key_2" android:adjustViewBounds="true" android:layout_weight="1" android:onClick="onKeyboardClick"/>
+        <ImageView android:id="@+id/kbdBtn3" android:padding="2dp" android:layout_width="0dp" android:layout_height="wrap_content" android:src="@drawable/key_3" android:adjustViewBounds="true" android:layout_weight="1" android:onClick="onKeyboardClick"/>
+        <ImageView android:id="@+id/kbdBtn4" android:padding="2dp" android:layout_width="0dp" android:layout_height="wrap_content" android:src="@drawable/key_4" android:adjustViewBounds="true" android:layout_weight="1" android:onClick="onKeyboardClick"/>
+        <ImageView android:id="@+id/kbdBtn5" android:padding="2dp" android:layout_width="0dp" android:layout_height="wrap_content" android:src="@drawable/key_5" android:adjustViewBounds="true" android:layout_weight="1" android:onClick="onKeyboardClick"/>
+        <ImageView android:id="@+id/kbdBtn6" android:padding="2dp" android:layout_width="0dp" android:layout_height="wrap_content" android:src="@drawable/key_6" android:adjustViewBounds="true" android:layout_weight="1" android:onClick="onKeyboardClick"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:paddingTop="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/kbdBtn7" android:padding="2dp" android:layout_width="0dp" android:layout_height="wrap_content" android:src="@drawable/key_7" android:adjustViewBounds="true" android:layout_weight="1" android:onClick="onKeyboardClick"/>
+        <ImageView android:id="@+id/kbdBtn8" android:padding="2dp" android:layout_width="0dp" android:layout_height="wrap_content" android:src="@drawable/key_8" android:adjustViewBounds="true" android:layout_weight="1" android:onClick="onKeyboardClick"/>
+        <ImageView android:id="@+id/kbdBtn9" android:padding="2dp" android:layout_width="0dp" android:layout_height="wrap_content" android:src="@drawable/key_9" android:adjustViewBounds="true" android:layout_weight="1" android:onClick="onKeyboardClick"/>
+        <ImageView android:id="@+id/kbdBtn0" android:padding="2dp" android:layout_width="0dp" android:layout_height="wrap_content" android:src="@drawable/key_0" android:adjustViewBounds="true" android:layout_weight="1" android:onClick="onKeyboardClick"/>
+        <View android:layout_width="0dp" android:layout_height="0dp" android:layout_weight="1"/>
+        <ImageView android:id="@+id/kbdBtnBack" android:padding="2dp" android:layout_width="0dp" android:layout_height="wrap_content" android:src="@drawable/key_back" android:adjustViewBounds="true" android:layout_weight="1" android:onClick="onKeyboardClick"/>
+    </LinearLayout>
+</LinearLayout>

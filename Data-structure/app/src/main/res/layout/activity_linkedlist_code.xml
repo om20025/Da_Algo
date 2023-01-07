@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".linkedlist_code"
+    android:fitsSystemWindows="true"
+    android:background="#FFFFF0"
+    tools:openDrawer="start">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/link_code_Toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/colorPrimary"
+                android:minHeight="?attr/actionBarSize"
+                android:theme="?attr/actionBarTheme"
+                app:title="Linked List Data Structures"
+                app:titleMarginStart="40dp"
+                android:backgroundTint="#ffa500"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                app:layout_constraintTop_toBottomOf="@+id/link_code_Toolbar"
+                android:id="@+id/link_code_textview1"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                tools:ignore="MissingConstraints" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                app:layout_constraintTop_toBottomOf="@+id/link_code_textview1"
+                tools:layout_editor_absoluteX="0dp"
+                android:text="Singly Linked List"
+                android:backgroundTint="#a020f0"
+                android:id="@+id/btn_link_single"
+                tools:ignore="UnknownId" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="40dp"
+                app:layout_constraintTop_toBottomOf="@+id/btn_link_single"
+                tools:layout_editor_absoluteX="0dp"
+                android:backgroundTint="#a020f0"
+                android:text="Doubly Linked List"
+                android:id="@+id/btn_link_double"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="40dp"
+                app:layout_constraintTop_toBottomOf="@+id/btn_link_double"
+                tools:layout_editor_absoluteX="0dp"
+                android:backgroundTint="#a020f0"
+                android:text="Circular Linked List"
+                android:id="@+id/btn_link_circular"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.drawerlayout.widget.DrawerLayout>

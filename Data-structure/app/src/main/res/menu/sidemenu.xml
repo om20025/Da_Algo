@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"> //Menu One 
+    <group android:checkableBehavior="single">
+        <item android:icon="@drawable/ic_home" android:id="@+id/Home_Menu" android:title="Home Page"/>
+        <item android:icon="@drawable/ic_visu" android:id="@+id/Visualization" android:title="Visualization"/>
+        <item android:icon="@drawable/ic_sort" android:id="@+id/Sorting" android:title="Sorting"/>
+        <item android:title="Inbuilt Data Type">
+            <menu>
+                <item android:icon="@drawable/ic_array" android:id="@+id/Array" android:title="Array"/>
+                <item android:icon="@drawable/ic_linkedlist_main" android:id="@+id/Linked_List" android:title="Linked List"/>
+            </menu>&gt; 
+        </item>
+    </group> //Menu Two 
+    <group android:checkableBehavior="single">
+        <item android:title="Abstract Data Type">
+            <menu>
+                <item android:icon="@drawable/ic_stack" android:id="@+id/Stack" android:title="Stack"/>
+                <item android:icon="@drawable/ic_queue" android:id="@+id/queue" android:title="Queue"/>
+                <item android:icon="@drawable/ic_tree" android:id="@+id/tree" android:title="Tree"/>
+                <item android:icon="@drawable/ic_heap" android:id="@+id/heap" android:title="Heaps"/>
+            </menu>
+        </item>
+    </group>
+    <item android:title="Devloper Details">
+        <menu>
+            <item android:icon="@drawable/ic_aboutus" android:id="@+id/aboutus" android:title="About Us"/>
+            <item android:icon="@drawable/ic_feedback" android:id="@+id/feedback" android:title="Feed Back"/>
+        </menu>
+    </item>
+</menu>

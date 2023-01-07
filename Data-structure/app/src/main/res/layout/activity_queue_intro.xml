@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".queue_intro"
+    android:fitsSystemWindows="true"
+    android:id="@+id/queue_intro"
+    tools:openDrawer="start"
+    android:background="#FFFFF0">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/queue_intro_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/colorPrimary"
+                android:backgroundTint="#ffa500"
+                android:minHeight="?attr/actionBarSize"
+                android:theme="?attr/actionBarTheme"
+                app:title="Queue"
+                app:titleMarginStart="40dp"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="6dp"
+                tools:layout_editor_absoluteY="0dp" />
+
+            <ImageView
+                android:id="@+id/queue_image1"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:src="@drawable/queue"
+                app:layout_constraintTop_toBottomOf="@+id/queue_intro_toolbar"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/queue_text1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/black"
+                android:textSize="24dp"
+                android:layout_marginRight="10dp"
+                android:textAlignment="gravity"
+                app:layout_constraintTop_toBottomOf="@+id/queue_image1"
+                tools:ignore="MissingConstraints,UnknownIdInLayout"
+                tools:layout_editor_absoluteX="0dp" />
+
+            <TextView
+                android:id="@+id/queue_text2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:layout_marginRight="10dp"
+                android:textAlignment="gravity"
+                app:layout_constraintTop_toBottomOf="@+id/queue_text1"
+                tools:ignore="MissingConstraints,UnknownIdInLayout"
+                tools:layout_editor_absoluteX="0dp" />
+
+            <TextView
+                android:id="@+id/queue_text3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/black"
+                android:textSize="24dp"
+                android:layout_marginRight="10dp"
+                android:textAlignment="gravity"
+                app:layout_constraintTop_toBottomOf="@+id/queue_text2"
+                tools:ignore="MissingConstraints,UnknownIdInLayout"
+                tools:layout_editor_absoluteX="0dp" />
+
+            <TextView
+                android:id="@+id/queue_text4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:layout_marginRight="10dp"
+                android:textAlignment="gravity"
+                app:layout_constraintTop_toBottomOf="@+id/queue_text3"
+                tools:ignore="MissingConstraints,UnknownIdInLayout"
+                tools:layout_editor_absoluteX="0dp" />
+
+            <TextView
+                android:id="@+id/queue_text5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textAlignment="gravity"
+                android:textColor="@color/black"
+                android:textSize="24dp"
+                app:layout_constraintTop_toBottomOf="@+id/queue_text4"
+                tools:ignore="MissingConstraints,UnknownIdInLayout"
+                tools:layout_editor_absoluteX="0dp" />
+
+            <TextView
+                android:id="@+id/queue_text6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:layout_marginRight="10dp"
+                android:textAlignment="gravity"
+                app:layout_constraintTop_toBottomOf="@+id/queue_text5"
+                tools:ignore="MissingConstraints,UnknownIdInLayout"
+                tools:layout_editor_absoluteX="0dp" />
+
+            <TextView
+                android:id="@+id/queue_text7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/black"
+                android:textSize="24dp"
+                android:layout_marginRight="10dp"
+                android:textAlignment="gravity"
+                app:layout_constraintTop_toBottomOf="@+id/queue_text6"
+                tools:ignore="MissingConstraints,UnknownIdInLayout"
+                tools:layout_editor_absoluteX="0dp" />
+
+            <TextView
+                android:id="@+id/queue_text8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:layout_marginRight="10dp"
+                android:textAlignment="gravity"
+                app:layout_constraintTop_toBottomOf="@+id/queue_text7"
+                tools:ignore="MissingConstraints,UnknownIdInLayout"
+                tools:layout_editor_absoluteX="0dp" />
+
+            <TextView
+                android:id="@+id/queue_text9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/black"
+                android:textSize="24dp"
+                android:layout_marginRight="10dp"
+                android:textAlignment="gravity"
+                app:layout_constraintTop_toBottomOf="@+id/queue_text8"
+                tools:ignore="MissingConstraints,UnknownIdInLayout"
+                tools:layout_editor_absoluteX="0dp" />
+
+            <TextView
+                android:id="@+id/queue_text10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:layout_marginRight="10dp"
+                android:textAlignment="gravity"
+                app:layout_constraintTop_toBottomOf="@+id/queue_text9"
+                tools:ignore="MissingConstraints,UnknownIdInLayout"
+                tools:layout_editor_absoluteX="0dp" />
+
+            <TextView
+                android:id="@+id/queue_text11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:layout_marginRight="10dp"
+                android:textAlignment="gravity"
+                app:layout_constraintTop_toBottomOf="@+id/queue_text10"
+                tools:ignore="MissingConstraints,UnknownIdInLayout"
+                tools:layout_editor_absoluteX="0dp" />
+
+            <TextView
+                android:id="@+id/queue_text12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:layout_marginRight="10dp"
+                android:textAlignment="gravity"
+                app:layout_constraintTop_toBottomOf="@+id/queue_text11"
+                tools:ignore="MissingConstraints,UnknownIdInLayout"
+                tools:layout_editor_absoluteX="0dp" />
+
+            <ImageView
+                android:id="@+id/queue_image2"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:src="@drawable/doublequeue"
+                app:layout_constraintTop_toBottomOf="@+id/queue_text12"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/queue_text13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:layout_marginRight="10dp"
+                android:textAlignment="gravity"
+                app:layout_constraintTop_toBottomOf="@+id/queue_image2"
+                tools:ignore="MissingConstraints,UnknownIdInLayout"
+                tools:layout_editor_absoluteX="0dp" />
+
+            <TextView
+                android:id="@+id/queue_text14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:layout_marginRight="10dp"
+                android:textAlignment="gravity"
+                app:layout_constraintTop_toBottomOf="@+id/queue_text13"
+                tools:ignore="MissingConstraints,UnknownIdInLayout"
+                tools:layout_editor_absoluteX="0dp" />
+
+            <ImageView
+                android:id="@+id/queue_image3"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:src="@drawable/priorityqueue"
+                app:layout_constraintTop_toBottomOf="@+id/queue_text14"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/queue_text15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:layout_marginRight="10dp"
+                android:textAlignment="gravity"
+                app:layout_constraintTop_toBottomOf="@+id/queue_image3"
+                tools:ignore="MissingConstraints,UnknownIdInLayout"
+                tools:layout_editor_absoluteX="0dp" />
+
+            <TextView
+                android:id="@+id/queue_text16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:layout_marginRight="10dp"
+                android:textAlignment="gravity"
+                app:layout_constraintTop_toBottomOf="@+id/queue_text15"
+                tools:ignore="MissingConstraints,UnknownIdInLayout"
+                tools:layout_editor_absoluteX="0dp" />
+
+            <ImageView
+                android:id="@+id/queue_image4"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:src="@drawable/circularqueue"
+                app:layout_constraintTop_toBottomOf="@+id/queue_text16"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/queue_text17"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/black"
+                android:textSize="24dp"
+                android:layout_marginRight="10dp"
+                app:layout_constraintTop_toBottomOf="@+id/queue_image4"
+                tools:ignore="MissingConstraints,UnknownIdInLayout"
+                tools:layout_editor_absoluteX="0dp" />
+
+            <TextView
+                android:id="@+id/queue_text18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/black"
+                android:textSize="14dp"
+                android:layout_marginRight="10dp"
+                app:layout_constraintTop_toBottomOf="@+id/queue_text17"
+                tools:ignore="MissingConstraints,UnknownIdInLayout"
+                tools:layout_editor_absoluteX="0dp" />
+
+            <TextView
+                android:id="@+id/queue_text19"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:layout_marginRight="10dp"
+                app:layout_constraintTop_toBottomOf="@+id/queue_text18"
+                tools:ignore="MissingConstraints,UnknownIdInLayout"
+                tools:layout_editor_absoluteX="0dp" />
+
+            <TextView
+                android:id="@+id/queue_text20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:layout_marginRight="10dp"
+                app:layout_constraintTop_toBottomOf="@+id/queue_text19"
+                tools:ignore="MissingConstraints,UnknownIdInLayout"
+                tools:layout_editor_absoluteX="0dp" />
+
+            <TextView
+                android:id="@+id/queue_text21"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:layout_marginRight="10dp"
+                app:layout_constraintTop_toBottomOf="@+id/queue_text20"
+                tools:ignore="MissingConstraints,UnknownIdInLayout"
+                tools:layout_editor_absoluteX="0dp" />
+
+            <TextView
+                android:id="@+id/queue_text22"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:layout_marginRight="10dp"
+                app:layout_constraintTop_toBottomOf="@+id/queue_text21"
+                tools:ignore="MissingConstraints,UnknownIdInLayout"
+                tools:layout_editor_absoluteX="0dp" />
+
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/queue_intro_navigation"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/headerfile"
+        app:menu="@menu/sidemenu">
+
+    </com.google.android.material.navigation.NavigationView>
+
+</androidx.drawerlayout.widget.DrawerLayout>

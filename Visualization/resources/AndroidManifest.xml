@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" android:compileSdkVersion="23" android:compileSdkVersionCodename="6.0-2438415" package="com.gbhat.dsv" platformBuildVersionCode="23" platformBuildVersionName="6.0-2438415">
+    <uses-sdk android:minSdkVersion="15" android:targetSdkVersion="23"/>
+    <application android:theme="@style/AppTheme" android:label="Da-algo" android:icon="@mipmap/ic_launcher" android:allowBackup="true" android:supportsRtl="true">
+        <activity android:name="com.gbhat.dsv.MainActivity" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.gbhat.dsv.TreeActivity" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name="com.gbhat.dsv.StackActivity" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name="com.gbhat.dsv.QueueActivity" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name="com.gbhat.dsv.HeapActivity" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name="com.gbhat.dsv.SettingsActivity" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateAlwaysHidden"/>
+    </application>
+</manifest>

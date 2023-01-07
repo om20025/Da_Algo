@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.data_structure">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Datastructure">
+        <activity
+            android:name=".Stack_video"
+            android:exported="false" />
+        <activity
+            android:name=".linkedlist_code"
+            android:exported="false" />
+        <activity
+            android:name=".tree_code"
+            android:exported="false" />
+        <activity
+            android:name=".Heap_code"
+            android:exported="false" />
+        <activity
+            android:name=".Array_code"
+            android:exported="false" />
+        <activity
+            android:name=".Visulization"
+            android:exported="false" />
+        <activity
+            android:name=".sorting"
+            android:exported="false" />
+        <activity
+            android:name=".heap_video"
+            android:exported="false" />
+        <activity
+            android:name=".heap_intro"
+            android:exported="false" />
+        <activity
+            android:name=".AVl_tree"
+            android:exported="false" />
+        <activity
+            android:name=".RedBlack_tree"
+            android:exported="false" />
+        <activity
+            android:name=".BST_tree"
+            android:exported="false" />
+        <activity
+            android:name=".tree_video"
+            android:exported="false" />
+        <activity
+            android:name=".tree_intro"
+            android:exported="false" />
+        <activity
+            android:name=".queue_linkedlist"
+            android:exported="false" />
+        <activity
+            android:name=".queue_array"
+            android:exported="false" />
+        <activity
+            android:name=".queue_code"
+            android:exported="false" />
+        <activity
+            android:name=".queue_video"
+            android:exported="false" />
+        <activity
+            android:name=".queue_intro"
+            android:exported="false" />
+        <activity
+            android:name=".stack_linkedlist"
+            android:exported="false" />
+        <activity
+            android:name=".stack_array"
+            android:exported="false" />
+        <activity
+            android:name=".stack_code"
+            android:exported="false" />
+        <activity
+            android:name=".stack_introduction"
+            android:exported="false" />
+        <activity
+            android:name=".circular_linkedlist"
+            android:exported="false" />
+        <activity
+            android:name=".doubly_linkedlist"
+            android:exported="false" />
+        <activity
+            android:name=".singly_linkedlist"
+            android:exported="false" />
+        <activity
+            android:name=".Linkedlist_Video"
+            android:exported="false" />
+        <activity
+            android:name=".linkedlist_intro"
+            android:exported="false" />
+        <activity
+            android:name=".Array_video"
+            android:exported="false" />
+        <activity
+            android:name=".array_introduction"
+            android:exported="false" />
+        <activity
+            android:name=".Queue"
+            android:exported="false" />
+        <activity
+            android:name=".Stack"
+            android:exported="false" />
+        <activity
+            android:name=".Feedback"
+            android:exported="false" />
+        <activity
+            android:name=".Aboutus"
+            android:exported="false" />
+        <activity
+            android:name=".Heap"
+            android:exported="false" />
+        <activity
+            android:name=".tree"
+            android:exported="false" />
+        <activity
+            android:name=".LinkedList"
+            android:exported="false" />
+        <activity
+            android:name=".Array"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:slider="slider" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.gbhat.dsv.SeekBarPreference android:max="100" android:title="Animation Speed" android:key="pref_animation_speed" android:summary="" android:defaultValue="50" slider:min="1" slider:unitsLeft="" slider:unitsRight=""/>
+    <CheckBoxPreference android:title="Scroll Automatically" android:key="pref_scroll_auto" android:defaultValue="true"/>
+</PreferenceScreen>

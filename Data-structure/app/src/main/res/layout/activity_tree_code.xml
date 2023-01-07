@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".tree_code"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start"
+    android:background="#FFFFF0">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/Tree_code_Toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/colorPrimary"
+                android:minHeight="?attr/actionBarSize"
+                android:theme="?attr/actionBarTheme"
+                app:title="Tree Data Structures"
+                app:titleMarginStart="40dp"
+                android:backgroundTint="#ffa500"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                app:layout_constraintTop_toBottomOf="@+id/Tree_code_Toolbar"
+                android:id="@+id/tree_code_textview1"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textAlignment="gravity"
+                tools:ignore="MissingConstraints" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                app:layout_constraintTop_toBottomOf="@+id/tree_code_textview1"
+                tools:layout_editor_absoluteX="0dp"
+                android:text="Binary Search Tree"
+                android:backgroundTint="#a020f0"
+                android:id="@+id/btn_tree_BST"
+                tools:ignore="UnknownId" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="40dp"
+                app:layout_constraintTop_toBottomOf="@+id/btn_tree_BST"
+                tools:layout_editor_absoluteX="0dp"
+                android:backgroundTint="#a020f0"
+                android:text="AVL Tree"
+                android:id="@+id/btn_tree_AVL"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="40dp"
+                app:layout_constraintTop_toBottomOf="@+id/btn_tree_AVL"
+                tools:layout_editor_absoluteX="0dp"
+                android:backgroundTint="#a020f0"
+                android:text="Red Black Tree"
+                android:id="@+id/btn_tree_Redblack"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.drawerlayout.widget.DrawerLayout>

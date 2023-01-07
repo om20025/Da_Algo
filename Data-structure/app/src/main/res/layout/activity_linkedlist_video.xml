@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Linkedlist_Video"
+    android:background="#FFFFF0">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+
+        <androidx.constraintlayout.widget.ConstraintLayout android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/Linkedlist_video_Toolbar"
+                android:backgroundTint="#ffa500"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/colorPrimary"
+                android:minHeight="?attr/actionBarSize"
+                android:theme="?attr/actionBarTheme"
+                tools:ignore="MissingConstraints"
+                app:title="Queue Data Structure"
+                app:titleMarginStart="40dp"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="40dp"
+                app:layout_constraintTop_toBottomOf="@+id/Linkedlist_video_Toolbar"
+                tools:layout_editor_absoluteX="0dp"
+                android:text="Introduction Of Linked list"
+                android:backgroundTint="#a020f0"
+                android:id="@+id/btn_linkedlist_video1"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="40dp"
+                app:layout_constraintTop_toBottomOf="@+id/btn_linkedlist_video1"
+                tools:layout_editor_absoluteX="0dp"
+                android:text="Singly Linked List"
+                android:backgroundTint="#a020f0"
+                android:id="@+id/btn_linkedlist_video2"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="40dp"
+                app:layout_constraintTop_toBottomOf="@+id/btn_linkedlist_video2"
+                tools:layout_editor_absoluteX="0dp"
+                android:text="Doubly Linked List"
+                android:backgroundTint="#a020f0"
+                android:id="@+id/btn_linkedlist_video3"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="40dp"
+                app:layout_constraintTop_toBottomOf="@+id/btn_linkedlist_video3"
+                tools:layout_editor_absoluteX="0dp"
+                android:text="Circular Linked List"
+                android:backgroundTint="#a020f0"
+                android:id="@+id/btn_linkedlist_video4"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.drawerlayout.widget.DrawerLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/StackPage"
+    tools:context=".Stack"
+    android:fitsSystemWindows="true"
+    android:background="#FFFFF0"
+    tools:openDrawer="start">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/Stack_Toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/colorPrimary"
+                android:minHeight="?attr/actionBarSize"
+                android:theme="?attr/actionBarTheme"
+                app:title="Stack Data Structures"
+                app:titleMarginStart="40dp"
+                android:backgroundTint="#ffa500"
+                tools:ignore="MissingConstraints" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="40dp"
+                app:layout_constraintTop_toBottomOf="@+id/Stack_Toolbar"
+                tools:layout_editor_absoluteX="0dp"
+                android:text="Introduction"
+                android:backgroundTint="#a020f0"
+                android:id="@+id/btn_stack_intro"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="40dp"
+                app:layout_constraintTop_toBottomOf="@+id/btn_stack_intro"
+                tools:layout_editor_absoluteX="0dp"
+                android:backgroundTint="#a020f0"
+                android:text="Video"
+                android:id="@+id/btn_stack_Video"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="40dp"
+                app:layout_constraintTop_toBottomOf="@+id/btn_stack_Video"
+                tools:layout_editor_absoluteX="0dp"
+                android:backgroundTint="#a020f0"
+                android:text="Code"
+                android:id="@+id/btn_stack_ProgramCode"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/Stack_Navigation"
+        app:headerLayout="@layout/headerfile"
+        app:menu="@menu/sidemenu"
+        android:layout_gravity="start">
+
+    </com.google.android.material.navigation.NavigationView>
+
+</androidx.drawerlayout.widget.DrawerLayout>

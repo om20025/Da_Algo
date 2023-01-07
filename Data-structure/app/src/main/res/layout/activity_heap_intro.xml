@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".heap_intro"
+    android:fitsSystemWindows="true"
+    android:id="@+id/heap_intro"
+    tools:openDrawer="start"
+    android:background="#FFFFF0">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/heap_intro_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/colorPrimary"
+                android:backgroundTint="#ffa500"
+                android:minHeight="?attr/actionBarSize"
+                android:theme="?attr/actionBarTheme"
+                app:title="Heap"
+                app:titleMarginStart="40dp"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="6dp"
+                tools:layout_editor_absoluteY="0dp" />
+
+            <ImageView
+                android:id="@+id/heap_image1"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:src="@drawable/binaryheap"
+                app:layout_constraintTop_toBottomOf="@+id/heap_intro_toolbar"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/heap_text1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/black"
+                android:textSize="24dp"
+                android:layout_marginRight="10dp"
+                android:textAlignment="gravity"
+                app:layout_constraintTop_toBottomOf="@+id/heap_image1"
+                tools:ignore="MissingConstraints,UnknownIdInLayout"
+                tools:layout_editor_absoluteX="0dp" />
+
+            <TextView
+                android:id="@+id/heap_text2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:layout_marginRight="10dp"
+                android:textAlignment="gravity"
+                app:layout_constraintTop_toBottomOf="@+id/heap_text1"
+                tools:ignore="MissingConstraints,UnknownIdInLayout"
+                tools:layout_editor_absoluteX="0dp" />
+
+            <TextView
+                android:id="@+id/heap_text3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/black"
+                android:textSize="24dp"
+                android:layout_marginRight="10dp"
+                android:textAlignment="gravity"
+                app:layout_constraintTop_toBottomOf="@+id/heap_text2"
+                tools:ignore="MissingConstraints,UnknownIdInLayout"
+                tools:layout_editor_absoluteX="0dp" />
+
+            <TextView
+                android:id="@+id/heap_text4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:layout_marginRight="10dp"
+                android:textAlignment="gravity"
+                app:layout_constraintTop_toBottomOf="@+id/heap_text3"
+                tools:ignore="MissingConstraints,UnknownIdInLayout"
+                tools:layout_editor_absoluteX="0dp" />
+
+            <TextView
+                android:id="@+id/heap_text5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textAlignment="gravity"
+                android:scrollbars="horizontal"
+                android:textColor="@color/black"
+                android:textSize="24dp"
+                app:layout_constraintTop_toBottomOf="@+id/heap_text4"
+                tools:ignore="MissingConstraints,UnknownIdInLayout"
+                tools:layout_editor_absoluteX="0dp" />
+
+            <TextView
+                android:id="@+id/heap_text6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:layout_marginRight="10dp"
+                android:textAlignment="gravity"
+                app:layout_constraintTop_toBottomOf="@+id/heap_text5"
+                tools:ignore="MissingConstraints,UnknownIdInLayout"
+                tools:layout_editor_absoluteX="0dp" />
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/heap_intro_navigation"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/headerfile"
+        app:menu="@menu/sidemenu">
+
+    </com.google.android.material.navigation.NavigationView>
+
+</androidx.drawerlayout.widget.DrawerLayout>
